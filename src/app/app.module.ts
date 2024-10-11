@@ -10,12 +10,10 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { firebaseConfig } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 import { AuthComponent } from './testers/auth/auth.component';
-import { MapComponent } from './components/map/map.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent,
-    MapComponent
+    AuthComponent
   ],
   imports: [
     FormsModule,
