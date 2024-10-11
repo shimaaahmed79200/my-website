@@ -11,11 +11,15 @@ import { firebaseConfig } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 import { AuthComponent } from './testers/auth/auth.component';
 import { MapComponent } from './components/map/map.component';
+import { EventcardComponent } from './components/eventcard/eventcard.component';
+import { TourcardComponent } from './components/tourcard/tourcard.component';
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    MapComponent
+    MapComponent,
+    EventcardComponent,
+    TourcardComponent,
   ],
   imports: [
     FormsModule,
