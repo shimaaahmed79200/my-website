@@ -11,19 +11,37 @@ import { SliderComponent } from './slider/slider.component';
 import { EventsHomeComponent } from './events-home/events-home.component';
 import { ToursHomeComponent } from './tours-home/tours-home.component';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { firebaseConfig } from 'src/environments/environment';
+import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './testers/auth/auth.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
+import { BrandComponent } from './brand/brand.component';
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     HomeComponent,
     NavbarComponent,
     FooterComponent,
     SliderComponent,
     EventsHomeComponent,
-    ToursHomeComponent
+    ToursHomeComponent,
+    SubscribeComponent,
+    BrandComponent
+=======
+    AuthComponent
+>>>>>>> 797ecb29837b5770a5c3a41d2b74b23d64162850
   ],
   imports: [
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule, 
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
