@@ -1,0 +1,35 @@
+.tours {
+  padding: 40px;
+  background-color: #f3dbc0;
+}
+.tours h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+.tour-list {
+  display: flex;
+  justify-content: space-around;
+}
+.tour-card {
+  background-color: #DDA86F;
+  padding: 20px;
+  border-radius: 8px;
+  width: 45%;
+  text-align: center;
+}
+.tour-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.tour-card p {
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.tour-card button {
+  background-color: #0f4a8e;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
