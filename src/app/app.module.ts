@@ -18,28 +18,17 @@ import { firebaseConfig } from 'src/environments/environment';
 
 import { FormsModule } from '@angular/forms';
 
-import { AuthComponent } from './testers/auth/auth.component';
 
-import { MapComponent } from './components/map/map.component';
 import { EventcardComponent } from './components/eventcard/eventcard.component';
 import { TourcardComponent } from './components/tourcard/tourcard.component';
-@NgModule({
-  declarations: [
-    AppComponent,
-    AuthComponent,
-    MapComponent,
-    EventcardComponent,
-    TourcardComponent,
-
-
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { BrandComponent } from './brand/brand.component';
 import { EventsComponent } from './components/events/events.component';
 
+  
 @NgModule({
   declarations: [
     AppComponent,
-
     HomeComponent,
     NavbarComponent,
     FooterComponent,
@@ -48,13 +37,13 @@ import { EventsComponent } from './components/events/events.component';
     ToursHomeComponent,
     SubscribeComponent,
 
+    EventcardComponent,
+    TourcardComponent,
+
     BrandComponent,
     EventsComponent
-
-    BrandComponent
-    AuthComponent
-
   ],
+
   imports: [
     FormsModule,
     BrowserModule,

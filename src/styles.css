@@ -109,7 +109,7 @@ input[type="text"]{
   *::-webkit-scrollbar-thumb:active {
     background-color: var(--kblue-200);
   }
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
