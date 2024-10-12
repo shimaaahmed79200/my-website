@@ -1,7 +1,7 @@
 .slider {
   position: relative;
   /* height: 400px; */
-  background:url(../../assets/Pyramids.jpg);
+  background:url(/assets/imgs/Pyramids.jpg);
 }
 .slide img {
   width: 100%;
