@@ -15,14 +15,14 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { firebaseConfig } from 'src/environments/environment';
+
 import { FormsModule } from '@angular/forms';
-import { AuthComponent } from './testers/auth/auth.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { BrandComponent } from './brand/brand.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     HomeComponent,
     NavbarComponent,
     FooterComponent,
@@ -31,9 +31,6 @@ import { BrandComponent } from './brand/brand.component';
     ToursHomeComponent,
     SubscribeComponent,
     BrandComponent
-=======
-    AuthComponent
->>>>>>> 797ecb29837b5770a5c3a41d2b74b23d64162850
   ],
   imports: [
     FormsModule,
