@@ -2,9 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #024975;
   padding: 1em;
-  color: aliceblue;
+  color: var(--kdark-yellow);
+  top: 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  background: 
+    linear-gradient(90deg,rgba(221, 168, 111, 0.8), rgba(221, 168, 111, 1)),
+    url('/assets/imgs/pattern_one.jpg');
+    background-size:contain;
+    background-position: center;
 }
 .logo img {
   height: 50px;
@@ -17,7 +23,10 @@
   margin-left: 20px;
 }
 .nav-links a {
-  color: white;
+  color: var(--kblue-300);
+  font-family: var(--kFont-Bebas);
   text-decoration: none;
   font-weight:bold;
+  letter-spacing: 1px;
+  font-size: var(--kFS-lg);
 }
