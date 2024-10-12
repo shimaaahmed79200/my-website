@@ -4,6 +4,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: 
+    linear-gradient(90deg, rgba(234, 221, 207, 0.2), rgba(234, 221, 207, 0.9)),
+    url('/assets/imgs/bkg_one.jpg');
+    background-size:cover;
+    background-position: center;
+    align-items: center;
 }
 
 .events-container{
@@ -12,11 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--kPadding-reg);
-    background: 
-    linear-gradient(90deg, rgba(234, 221, 207, 0.2), rgba(234, 221, 207, 0.9)),
-    url('/assets/imgs/bkg_one.jpg');
-    background-size:cover;
-    background-position: center;
+    max-width: 1280px;
 }
 
 .head{

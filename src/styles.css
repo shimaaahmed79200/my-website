@@ -3,12 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 .light-mode{
+    /* ! Dont Use This Variables */
     --kdark-yellow: #DDA86F;
     --kblue: #41ACEE;
     --kblue-200: #3998d3;
     --kblue-300: #014975;
     --klight-yellow: #f5f1ec;
     --kgray: #D9D9D9;
+
+    /** Use This Variables Insted of Above */
+
+    --primary-color: #DDA86F;
+    --primary-light: #f5f1ec;
+    --accent-color: #41ACEE;
+    --text-color: white;
+    --grayed-out-bg: #D7D7D7;
+    --grayed-out-text: #B8B8B8; 
+    --gray-button-bg: #D9D9D9;
+    --gray-button-text: #404040;
+    --kblue-200: #3998d3;
+    --kblue-300: #014975;
 
     --kPadding-min : 6px;
     --kPadding-mid : 10px;
@@ -80,7 +94,7 @@ input[type="text"]{
     }
 }
 
-/* Chrome, Edge and Safari */
+
 *::-webkit-scrollbar {
     width: 16px;
   }
@@ -112,18 +126,6 @@ input[type="text"]{
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-:root {
-    --primary-color: #DDA86F;
-    --primary-light: #EADDCF;
-    --accent-color: #41ACEE;
-    --text-color: white;
-    --grayed-out-bg: #D7D7D7;
-    --grayed-out-text: #B8B8B8; 
-    --gray-button-bg: #D9D9D9;
-    --gray-button-text: #404040;
-}
-
 
 /* You can add global styles to this file, and also import other style files */
 
