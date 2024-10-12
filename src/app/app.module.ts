@@ -25,7 +25,8 @@ import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { EventsComponent } from './components/events/events.component';
 import { PageComponent } from './pages/page/page.component';
-
+import { HttpClientModule } from '@angular/common/http'
+import { MarkerService } from './services/marker.service';
   
 @NgModule({
   declarations: [
@@ -43,7 +44,9 @@ import { PageComponent } from './pages/page/page.component';
 
     BrandComponent,
     EventsComponent,
-    PageComponent
+    PageComponent,
+
+    
   ],
 
   imports: [
@@ -52,9 +55,10 @@ import { PageComponent } from './pages/page/page.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule, 
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MarkerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
