@@ -19,6 +19,7 @@ import { firebaseConfig } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { BrandComponent } from './brand/brand.component';
+import { EventsComponent } from './components/events/events.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BrandComponent } from './brand/brand.component';
     EventsHomeComponent,
     ToursHomeComponent,
     SubscribeComponent,
-    BrandComponent
+    BrandComponent,
+    EventsComponent
   ],
   imports: [
     FormsModule,
