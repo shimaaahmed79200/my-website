@@ -2,6 +2,7 @@
   background-color: #2a2929;
   color: #fff;
   padding: 20px;
+  width: calc(100vw - 56px);
 }
 
 .footer-content {
