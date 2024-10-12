@@ -17,12 +17,24 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { firebaseConfig } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 import { AuthComponent } from './testers/auth/auth.component';
+
+import { MapComponent } from './components/map/map.component';
+import { EventcardComponent } from './components/eventcard/eventcard.component';
+import { TourcardComponent } from './components/tourcard/tourcard.component';
+@NgModule({
+  declarations: [
+    AppComponent,
+    AuthComponent,
+    MapComponent,
+    EventcardComponent,
+    TourcardComponent,
+
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { BrandComponent } from './brand/brand.component';
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
+
     HomeComponent,
     NavbarComponent,
     FooterComponent,
@@ -31,9 +43,7 @@ import { BrandComponent } from './brand/brand.component';
     ToursHomeComponent,
     SubscribeComponent,
     BrandComponent
-=======
     AuthComponent
->>>>>>> 797ecb29837b5770a5c3a41d2b74b23d64162850
   ],
   imports: [
     FormsModule,
