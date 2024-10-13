@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="container" >
+<div class="container">
         <div class="events-container">
                 <div class="head">
                         <div class="events-title">
@@ -17,6 +17,13 @@
 
                 <div class="filter-bar">
                         <div>
+                                <div>
+                                        <span>
+                                                <button class="dropdown-m" type="button">
+                                                        <i class="fa-solid fa-filter"></i><span>Filter</span>
+                                                </button>
+                                        </span>
+                                </div>
                                 <button type="button" id="recent"><span>Recent</span></button>
                                 <button type="button" id="name"><span>By Name</span></button>
                                 <button type="button" id="location"><span>By Location</span></button>
@@ -31,7 +38,7 @@
                 </div>
 
                 <div class="maps-container">
-                        <div class="map"></div>
+                        <div class="map" id="map"></div>
                         <div class="locations-list">
                                 <button type="button" id="location" name="location"><i
                                                 class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
