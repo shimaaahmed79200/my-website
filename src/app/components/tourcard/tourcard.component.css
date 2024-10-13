@@ -1,7 +1,10 @@
+button {
+    min-width: auto;
+}
 .card-container {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     background-color: var(--primary-color);
     min-height: 350px;
     height: auto;
@@ -70,7 +73,7 @@
     padding: 10px;
 }
 .images-container{
-    width: 93%;
+    width: 95%;
     position: relative;
 }
 .box {
@@ -101,22 +104,28 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Third box shadow */
 }
 .buttons-container {
-    width: 5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 5%;
+    /* overflow: hidden; */
 }
 .buttons-container button {
-    height: 30%;
+    height: 100px;
     background-color: var(--primary-light);
     border: none;
     color: var(--primary-color);
+    padding: 0;
+    width: 100%;
+    min-width: 100%;
 }
 #btn1 {
-    border-radius: 50px 50px 0 0;
+    width: 25px;
+    border-radius:50px 50px 0 0;
     border-bottom: 1px solid var(--primary-color);
 }
 #btn2 {
+    width: 25px;
     border-radius: 0 0 50px 50px;
     border-top: 1px solid var(--primary-color);
 }

@@ -25,6 +25,8 @@ import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { EventsComponent } from './components/events/events.component';
 import { PageComponent } from './pages/page/page.component';
+import { EventspageComponent } from './pages/eventspage/eventspage.component';
+import { ToursspageComponent } from './pages/toursspage/toursspage.component';
 
   
 @NgModule({
@@ -43,7 +45,9 @@ import { PageComponent } from './pages/page/page.component';
 
     BrandComponent,
     EventsComponent,
-    PageComponent
+    PageComponent,
+    EventspageComponent,
+    ToursspageComponent
   ],
 
   imports: [

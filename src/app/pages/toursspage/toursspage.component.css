@@ -1,0 +1,57 @@
+main {
+    background-color: var(--primary-light);
+}
+.banner {
+    padding: 80px 100px 40px 100px;
+}
+.banner h1 {
+    font-family: var(--kFont-Bebas);
+    font-size: 96px;
+    color: var(--kblue-300);
+}
+.banner h3 {
+    padding-bottom: var(--kPadding-extra002);
+    font-family: var(--kFont-Jos);
+    font-size: var(--kFS-subTitle);
+    color: var(--kblue-300);
+    font-weight: 500;
+}
+.banner h6 {
+    font-family: var(--kFont-Jos);
+    font-size: var(--kFS-lg);
+    color: var(--kblue-300);
+    font-weight: 500;
+}
+
+.tours-stats {
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    color: white;
+    font-family: var(--kFont-Bebas);
+    font-weight: lighter;
+    font-size: var(--kFS-lg);
+}
+.tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tour-cards-section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tour-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
