@@ -4,8 +4,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 450px,1fr);
   gap: 20px;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .tours h1 {
@@ -29,6 +27,8 @@
   width: 40%;
   text-align: center;
   margin-bottom: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
 }
 .tour-card h3 {
   font-size: 24px;
@@ -46,11 +46,28 @@
   padding: 10px 15px;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+.tour-card button:hover{
+  /* transform: scale(1.01); */
+  background-color: #0d57aa;
+}
+.tour-card:hover {
+  transform: scale(1.05);
 }
 .images{
+  background-color: #f3dbc0;
   height: 70%;
-  width: 100%;
+  width: 40%;
   display: flex;
+  justify-content: space-between;
+}
+.images img{
+  width: 100px;
+  height: 100px;
+}
+.main-img{
+  width: 200px;
 }
 @media (max-width: 991px){
   .tours {
@@ -58,8 +75,7 @@
     background-color: #f3dbc0;
     display: grid;
     grid-template-columns: repeat(auto-fill, 50px,1fr);
-    /* justify-content: center;
-    align-items: center; */
+
   }
 }
 
@@ -78,22 +94,22 @@
   }
 
   .tour-card p {
-    font-size: 14px; /* تقليل حجم النص في الكروت */
+    font-size: 14px;
   }
 
   .tour-card button {
-    padding: 8px 12px; /* تعديل حجم الأزرار */
+    padding: 8px 12px;
   }
 }
 
-/* لشاشات الهواتف المحمولة الأصغر */
+
 @media (max-width: 480px) {
   .tour-card {
-    width: 90%; /* تجعل الكروت تأخذ العرض الكامل على الهواتف الصغيرة */
+    width: 90%;
   }
 
   .tour-list {
-    flex-direction: column; /* ترتيب الكروت بشكل عمودي */
-    align-items: center; /* توسيط الكروت */
+    flex-direction: column;
+    align-items: center; 
   }
 }

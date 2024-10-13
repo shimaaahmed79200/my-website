@@ -16,20 +16,20 @@
   color: #fff;
 }
 
-/* تعديل التصميم ليكون مرنًا */
+
 .event-list {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* للسماح بتغيير وضع البطاقات على الشاشات الصغيرة */
+  flex-wrap: wrap; 
 }
 
 .event-card {
   background-color: #f3dbc0;
   padding: 30px;
   border-radius: 8px;
-  width: 30%; /* العرض الأساسي على الشاشات الكبيرة */
+  width: 30%;
   text-align: center;
-  margin-bottom: 20px; /* مسافة بين البطاقات على الشاشات الصغيرة */
+  margin-bottom: 20px;
   transition: transform 0.3s;
 
 }
@@ -88,57 +88,57 @@ img{
   background-color: #054e9d;
 }
 
-/* تعديلات لشاشات العرض المتوسطة والصغيرة */
+
 @media (max-width: 768px) {
   .event-card {
-    width: 45%; /* تجعل البطاقات تأخذ عرض أكبر على الشاشات المتوسطة */
+    width: 45%;
     margin-left: 0;
   }
   .event-card:hover {
     transform: scale(1.02);
   }
   .events h2 {
-    font-size: 28px; /* تقليل حجم العنوان للشاشات المتوسطة */
+    font-size: 28px;
   }
 
   .event-card h3 {
-    font-size: 20px; /* تقليل حجم عناوين البطاقات */
+    font-size: 20px;
   }
 
   .event-card p {
-    font-size: 14px; /* تقليل حجم النص في البطاقات */
+    font-size: 14px;
   }
 
   .event-card button {
-    padding: 8px 12px; /* تعديل حجم الأزرار للشاشات المتوسطة */
+    padding: 8px 12px;
   }
 }
 
-/* تعديلات لشاشات الهواتف الصغيرة */
+
 @media (max-width: 480px) {
   .event-card {
-    width: 85%; /* تجعل البطاقات تأخذ العرض الكامل على الهواتف */
+    width: 85%;
   }
 
   .event-list {
-    flex-direction: column; /* ترتيب البطاقات عموديًا */
-    align-items: center; /* توسيط البطاقات في العمود */
+    flex-direction: column;
+    align-items: center;
   }
 
   .events h2 {
-    font-size: 24px; /* تقليل حجم العنوان للشاشات الصغيرة */
+    font-size: 24px;
   }
 
   .event-card h3 {
-    font-size: 18px; /* تقليل حجم عناوين البطاقات على الهواتف */
+    font-size: 18px;
   }
 
   .event-card p {
-    font-size: 12px; /* تقليل حجم النص في البطاقات على الهواتف */
+    font-size: 12px;
   }
 
   .event-card button {
-    padding: 6px 10px; /* تقليل حجم الأزرار على الهواتف */
+    padding: 6px 10px;
   }
 }
 

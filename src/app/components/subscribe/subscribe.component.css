@@ -5,20 +5,21 @@
   text-align: center;
   display: flex;
   justify-content: center;
-}
 
+}
 .newsletter {
   margin: 20px;
   padding: 100px 200px;
   border-radius: 20px;
   opacity: 0.9;
-  transition: 0.5s;
+  transition: transform 0.3s;
   background-image: url(../../../assets/dark-pyramids.png);
 }
 
 .newsletter:hover {
   opacity: 1;
   cursor: pointer;
+  transform: scale(1.01);
 }
 
 .newsletter p {
@@ -57,42 +58,42 @@
   background-color: #f4a423;
 }
 
-/* تحسين الاستجابة لشاشات العرض الصغيرة والمتوسطة */
+
 @media (max-width: 768px) {
   .newsletter {
-    padding: 50px 100px; /* تقليل المساحة حول المحتوى */
+    padding: 50px 100px;
   }
 
   .newsletter p {
-    font-size: 16px; /* تقليل حجم النص قليلاً */
+    font-size: 16px;
   }
 
   .newsletter input {
-    width: 80%; /* تجعل الحقل يأخذ مساحة أكبر على الشاشات الصغيرة */
+    width: 80%;
   }
 
   .newsletter button {
-    width: 80%; /* تجعل الزر يأخذ مساحة أكبر */
-    margin-top: 10px; /* إضافة مسافة فوق الزر */
+    width: 80%;
+    margin-top: 10px;
   }
 }
 
-/* تحسين الاستجابة للهواتف المحمولة */
+
 @media (max-width: 480px) {
   .newsletter {
-    padding: 30px 20px; /* تقليل الحشو لتتناسب مع الشاشات الصغيرة */
+    padding: 30px 20px;
   }
 
   .newsletter p {
-    font-size: 14px; /* تقليل حجم النص */
+    font-size: 14px;
   }
 
   .newsletter input, .newsletter button {
-    width: 90%; /* جعل الحقول تأخذ العرض الكامل */
-    margin: 10px 0; /* إضافة مسافة بين العناصر */
+    width: 90%;
+    margin: 10px 0;
   }
 
   .newsletter input:focus {
-    padding: 10px; /* إعادة تعيين الحشو على الهواتف */
+    padding: 10px;
   }
 }
