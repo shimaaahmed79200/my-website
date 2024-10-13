@@ -43,6 +43,7 @@
     --kFS-lg: 24px;
     --kFS-reg: 18px;
     --kFS-min: 16px;
+    --kFS-xm: 14px;
 }
 
 *{
@@ -89,14 +90,6 @@ input[type="text"]{
     border-radius: var(--kBorder-radius-reg);
 }
 
-
-@media (max-width: 1399px) {
-    .light-mode{
-        --kPadding-lg : 50px
-    }
-}
-
-
 *::-webkit-scrollbar {
     width: 16px;
   }
@@ -129,5 +122,78 @@ input[type="text"]{
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-/* You can add global styles to this file, and also import other style files */
 
+@media (max-width: 1420px) {
+  .light-mode{
+    --kFS-title: 76px;
+    --kFS-subTitle: 24px;
+    --kFS-lg: 24px;
+    --kFS-reg: 14px;
+    --kFS-min: 13px;
+    --kFS-xm: 12px;
+  }
+
+  .filter-bar button{
+    font-size: var(--kFS-reg);
+  }
+
+  .filter-bar>div{
+    flex: 0.5;
+  }
+
+  button>span{
+    font-size: var(--kFS-reg);
+  }
+
+  button{
+    padding: 0;
+  }
+
+  span>button{
+    display: none;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .light-mode{
+    --kFS-title: 76px;
+    --kFS-subTitle: 24px;
+    --kFS-lg: 24px;
+    --kFS-reg: 14px;
+    --kFS-min: 13px;
+    --kFS-xm: 12px;
+  }
+
+  .filter-bar button{
+    font-size: var(--kFS-min);
+  }
+
+  .filter-bar>div{
+    flex: 0.5;
+  }
+
+  .filter-bar>div>button{
+    display: none;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  
+}
+
+/* md */
+@media (max-width: 768px) {
+  
+}
+
+/* sm */
+@media (max-width: 640px) {
+  
+}
+
+/* xs */
+@media (max-width: 475px) {
+  
+}

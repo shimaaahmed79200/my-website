@@ -1,7 +1,8 @@
 .slider {
   position: relative;
-  /* height: 400px; */
-  background:url(/assets/imgs/Pyramids.jpg);
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image:url(/assets/imgs/Pyramids.jpg);
 }
 .slide img {
   width: 100%;
@@ -26,4 +27,8 @@
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+}
+.text-overlay button a{
+  color: aliceblue;
+  text-decoration: none;
 }
