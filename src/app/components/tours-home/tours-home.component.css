@@ -47,6 +47,11 @@
   border: none;
   cursor: pointer;
 }
+.images{
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
 @media (max-width: 991px){
   .tours {
     padding: 40px;
