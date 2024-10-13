@@ -1,7 +1,9 @@
 .card-container {
-    width: 40%;
     background-color: var(--primary-color);
     display: flex;
+    min-height: 150px;
+    max-height: 200px;
+    width: 100%;
     height: auto;
     border-radius: 20px;
 }
@@ -16,6 +18,8 @@
     background-color: white;
 }
 .info-container {
+    display: flex;
+    flex-direction: column;
     width: 60%  ;
     font-size: 12px;
     font-family: "Josefin Sans", sans-serif;
@@ -29,12 +33,15 @@
     letter-spacing: 1px;
 }
 .info-container p {
-    
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 .mini-info-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: auto;
+
 }
 .mini-info-container svg {
     width: 13px;
@@ -43,11 +50,12 @@
 }
 .mini-info-container button {
     aspect-ratio: 155/46;
-    height: 32px;
+    height: 35px;
     margin-left: auto;
     border-radius: 10px;
     border: none;
     background-color: var(--accent-color);
     color: var(--text-color);
     font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
 }
