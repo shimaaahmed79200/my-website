@@ -45,11 +45,20 @@
     background-position: center;
 }
 
-.filter-bar>div{
+.filter-bar>#filter-Btns-container{
     display: flex;
     gap: calc(var(--kPadding-reg) * 1.5);
     flex: 0.9;
 }
+
+#mapDisplayMode{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap:calc(var(--kPadding-reg)* 1.5);
+}
+
+
 
 h1{
     font-family: var(--kFont-Bebas);
@@ -76,7 +85,7 @@ p{
 .search-container{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 90% 45px;
+    grid-template-columns: 1fr 45px;
     flex: 1;
     width: 100%;
 }
@@ -122,43 +131,18 @@ p{
 }
 
 .locations-list{
-    flex: 0.15 1 auto;
+    flex: 0.25 1 auto;
     padding: var(--kPadding-reg);
     border-radius: var(--kBorder-radius-reg);
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-height: 50vh;
     overflow: auto;
     background: 
     linear-gradient(45deg, rgba(221, 168, 111, 0.8), rgba(221, 168, 111, 1)),
     url('/assets/imgs/bkg_two.jpg');
     background-size:cover;
     background-position: center;
-}
-
-.locations-list button{
-    width: 100%;
-    background-color: var(--klight-yellow);
-    text-align: left;
-    padding: var(--kPadding-reg);
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-}
-
-.locations-list>button>span,
-.locations-list>button>i
-{
-    font-size: var(--kFS-lg);
-    padding: 0;
-}
-
-.locations-list>button>i
-{
-    font-size: 28px;
-    color: var(--kdark-yellow);
 }
 
 #map {
@@ -173,6 +157,13 @@ p{
     gap: 6px;
 }
 
+.filter-parent{
+    display: none;
+}
+
+#locationsBtnList{
+    display: none;
+}
 /* @media (max-width:1406px) {
    .filter-bar>button,
    .filter-bar>div>button{

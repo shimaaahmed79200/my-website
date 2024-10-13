@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="container">
+<div class="parent-container">
         <div class="events-container">
                 <div class="head">
                         <div class="events-title">
@@ -16,13 +16,11 @@
                 </div>
 
                 <div class="filter-bar">
-                        <div>
-                                <div>
-                                        <span>
-                                                <button class="dropdown-m" type="button">
-                                                        <i class="fa-solid fa-filter"></i><span>Filter</span>
-                                                </button>
-                                        </span>
+                        <div id="filter-Btns-container">
+
+                                <div class="filter-parent">
+                                        <button type="button" id="dropdownM" class="dropdown-m"><i
+                                                        class="fa-solid fa-filter"></i><span>Filter</span></button>
                                 </div>
                                 <button type="button" id="recent"><span>Recent</span></button>
                                 <button type="button" id="name"><span>By Name</span></button>
@@ -34,50 +32,29 @@
                                                         class="fa-solid fa-magnifying-glass"></i></button>
                                 </div>
                         </div>
-                        <button type="button">Events Map</button>
+                        <div id="mapDisplayMode">
+                                <button type="button" id="locationsBtnList">Locations</button>
+                                <button type="button"><span>Events Map</span></button>
+                        </div>
                 </div>
 
                 <div class="maps-container">
                         <div class="map" id="map"></div>
                         <div class="locations-list">
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
-                                <button type="button" id="location" name="location"><i
-                                                class="fa-solid fa-location-dot"></i><span>Cairo</span></button>
+                                <button type="button" class="locationBtn">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span> CAIRO </span>
+                                </button>
+                                <button type="button" class="locationBtn">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span> CAIRO </span>
+                                </button>
+                                <button type="button" class="locationBtn">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span> CAIRO </span>
+                                </button>
                         </div>
                 </div>
         </div>
-        <app-footer></app-footer>
 </div>
+<app-footer></app-footer>
