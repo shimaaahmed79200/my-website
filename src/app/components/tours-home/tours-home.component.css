@@ -1,35 +1,99 @@
 .tours {
   padding: 40px;
   background-color: #f3dbc0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 450px,1fr);
+  gap: 20px;
+  /* justify-content: center;
+  align-items: center; */
 }
-.tours h2 {
+
+.tours h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 36px;
 }
+
+
 .tour-list {
+  margin-top: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 .tour-card {
   background-color: #DDA86F;
   padding: 20px;
   border-radius: 8px;
-  width: 45%;
+  width: 40%;
   text-align: center;
+  margin-bottom: 20px;
 }
 .tour-card h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
 .tour-card p {
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
 }
+
 .tour-card button {
   background-color: #0f4a8e;
   color: white;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
+}
+.images{
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 991px){
+  .tours {
+    padding: 40px;
+    background-color: #f3dbc0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50px,1fr);
+    /* justify-content: center;
+    align-items: center; */
+  }
+}
+
+@media (max-width: 768px) {
+
+  .tour-card {
+    width: 90%;
+  }
+
+  .tours h2 {
+    font-size: 28px;
+  }
+
+  .tour-card h3 {
+    font-size: 20px;
+  }
+
+  .tour-card p {
+    font-size: 14px; /* تقليل حجم النص في الكروت */
+  }
+
+  .tour-card button {
+    padding: 8px 12px; /* تعديل حجم الأزرار */
+  }
+}
+
+/* لشاشات الهواتف المحمولة الأصغر */
+@media (max-width: 480px) {
+  .tour-card {
+    width: 90%; /* تجعل الكروت تأخذ العرض الكامل على الهواتف الصغيرة */
+  }
+
+  .tour-list {
+    flex-direction: column; /* ترتيب الكروت بشكل عمودي */
+    align-items: center; /* توسيط الكروت */
+  }
 }
