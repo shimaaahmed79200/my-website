@@ -2,14 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #D8A35F;
+  background-color: #DDA86F;
   padding: 20px;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 .stat-item {
   text-align: center;
-  margin: 0 20px;
+  margin:0  20px 0;
 }
 
 .stat-item h2 {
@@ -17,6 +18,7 @@
   font-weight: bold;
   margin: 0;
   color: #fff;
+
 }
 
 .stat-item p {
@@ -39,4 +41,29 @@
 
 .view-tours-button button:hover {
   background-color: #e6d2a3;
+}
+
+/* استعلامات الوسائط للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي على الشاشات الصغيرة */
+    text-align: center;
+  }
+
+  .stat-item {
+    margin: 10px 0; /* تقليل المسافات بين العناصر */
+  }
+
+  .stat-item h2 {
+    font-size: 28px; /* تقليل حجم الخط */
+  }
+
+  .stat-item p {
+    font-size: 12px; /* تقليل حجم النص */
+  }
+
+  .view-tours-button button {
+    padding: 8px 16px; /* تقليل حجم الزر */
+    font-size: 14px; /* تقليل حجم النص داخل الزر */
+  }
 }
