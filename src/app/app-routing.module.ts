@@ -7,6 +7,7 @@ import { ToursspageComponent } from './pages/toursspage/toursspage.component';
 import { EventspageComponent } from './pages/eventspage/eventspage.component';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 import { ToursComponent } from './pages/tours/tours.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'/home', pathMatch: 'full'},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'events', component: EventsComponent},
   {path: 'tourdetails', component: EventDetailsComponent},
   {path: 'eventdetails', component: ToursComponent},
+  {path: 'login', component: LoginComponent},
 ];
 
 @NgModule({

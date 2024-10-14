@@ -32,6 +32,8 @@ import { EventspageComponent } from './pages/eventspage/eventspage.component';
 import { ToursspageComponent } from './pages/toursspage/toursspage.component';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 import { ToursComponent } from './pages/tours/tours.component';
+import { FormComponent } from './components/form/form.component';
+import { LoginComponent } from './components/login/login.component';
 
 
   
@@ -59,6 +61,8 @@ import { ToursComponent } from './pages/tours/tours.component';
     ToursspageComponent,
     FilterBarComponent,
     ToursComponent,
+    FormComponent,
+    LoginComponent,
 
     
   ],
