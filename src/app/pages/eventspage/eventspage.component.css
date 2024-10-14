@@ -73,11 +73,3 @@ main {
     padding: 0 80px;
 }
 
-.event-cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-    margin-top: 50px;
-    padding-bottom: 100px;
-}

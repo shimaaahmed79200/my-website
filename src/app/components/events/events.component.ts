@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnChanges, SimpleChanges } from '@angular/core';
 import { MarkerService } from 'src/app/services/marker.service';
 import * as L from 'leaflet';
-
+import { SharedServiceService } from 'src/app/services/shared-service.service';
 
 const iconUrl = 'assets/icons/location.png';
 const iconDefault = L.icon({
@@ -19,15 +19,17 @@ L.Marker.prototype.options.icon = iconDefault;
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css','../../../styles.css']
 })
-export class EventsComponent implements OnInit{
-  
-  constructor(private markerService: MarkerService){}
+export class EventsComponent implements AfterViewInit{
 
-  private map! : L.Map;
+  displayMap: boolean = true;
+
+  private map!: L.Map;
+
+  constructor(private markerService: MarkerService, private sharedService: SharedServiceService) {}
 
   private initMap(): void {
     this.map = L.map('map', {
-      center: [ 39.8282, -98.5795 ],
+      center: [39.8282, -98.5795],
       zoom: 3
     });
 
@@ -39,11 +41,29 @@ export class EventsComponent implements OnInit{
     tiles.addTo(this.map);
   }
 
-  
-  ngOnInit(): void {
-    this.initMap()
+  ngAfterViewInit(): void {
+    this.initMap();
     this.markerService.makeCapitalMarkers(this.map);
+    this.sharedService.isMapShown$.subscribe(isShown => {
+      this.displayMap = isShown; 
+      
+      setTimeout(()=>{
+        this.updateMap();
+        this.markerService.makeCapitalMarkers(this.map);
+      }, 100)
+    });
   }
 
-
+  private updateMap() {
+    if (this.displayMap) {
+      if (!this.map) {
+        this.initMap();
+      }
+    } else {
+      if (this.map) {
+        this.map.remove();
+        this.map = undefined!;
+      }
+    }
+  }
 }

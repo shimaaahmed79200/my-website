@@ -15,30 +15,9 @@
                         </div>
                 </div>
 
-                <div class="filter-bar">
-                        <div id="filter-Btns-container">
+                <app-filter-bar></app-filter-bar>
 
-                                <div class="filter-parent">
-                                        <button type="button" id="dropdownM" class="dropdown-m"><i
-                                                        class="fa-solid fa-filter"></i><span>Filter</span></button>
-                                </div>
-                                <button type="button" id="recent"><span>Recent</span></button>
-                                <button type="button" id="name"><span>By Name</span></button>
-                                <button type="button" id="location"><span>By Location</span></button>
-                                <button type="button" id="provider"><span>By Provider</span></button>
-                                <div class="search-container">
-                                        <input type="text" name="search" id="search" placeholder="search keywords">
-                                        <button type="button" name="searchBtn" id="searchBtn" class="searchBtn"><i
-                                                        class="fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                        </div>
-                        <div id="mapDisplayMode">
-                                <button type="button" id="locationsBtnList">Locations</button>
-                                <button type="button"><span>Events Map</span></button>
-                        </div>
-                </div>
-
-                <div class="maps-container">
+                <div class="maps-container" *ngIf="displayMap">
                         <div class="map" id="map"></div>
                         <div class="locations-list">
                                 <button type="button" class="locationBtn">
@@ -54,6 +33,12 @@
                                         <span> CAIRO </span>
                                 </button>
                         </div>
+                </div>
+                <div class="event-cards-container" *ngIf="!displayMap">
+                        <app-eventcard></app-eventcard>
+                        <app-eventcard></app-eventcard>
+                        <app-eventcard></app-eventcard>
+                        <app-eventcard></app-eventcard>
                 </div>
         </div>
 </div>

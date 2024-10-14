@@ -26,11 +26,12 @@ import { BrandComponent } from './components/brand/brand.component';
 import { EventsComponent } from './components/events/events.component';
 
 import { HttpClientModule } from '@angular/common/http'
-import { MarkerService } from './services/marker.service';
 import { EventDetailsComponent } from './pages/event-details/event-details.component';
 
 import { EventspageComponent } from './pages/eventspage/eventspage.component';
 import { ToursspageComponent } from './pages/toursspage/toursspage.component';
+import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
+import { ToursComponent } from './pages/tours/tours.component';
 
 
   
@@ -55,8 +56,11 @@ import { ToursspageComponent } from './pages/toursspage/toursspage.component';
 
     
     EventspageComponent,
-    ToursspageComponent
+    ToursspageComponent,
+    FilterBarComponent,
+    ToursComponent,
 
+    
   ],
 
   imports: [
@@ -65,7 +69,9 @@ import { ToursspageComponent } from './pages/toursspage/toursspage.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule, 
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
