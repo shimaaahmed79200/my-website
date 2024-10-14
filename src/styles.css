@@ -107,6 +107,11 @@ input[type="text"]{
 
 }
 
+button.active{
+  background-color: #014975;
+  color: white;
+}
+
 *::-webkit-scrollbar {
     width: 16px;
   }
@@ -194,18 +199,46 @@ input[type="text"]{
     display: none;
   }
 
+
   .filter-parent{
     display: block;
   }
+  
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filterBtns-container.visable{
+    position:relative;
+    z-index: 1001;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 120px;
+    gap:0px;
+    height: 0px;
+  }
+  
+  .filterBtns-container>button{
+    flex: 1;
+  }
+  
+  
+
 }
 
 /* lg */
 @media (max-width: 1024px) {
-  
+  .event-name-title{
+    font-size: 65px;
+  }
 }
 
 /* md */
 @media (max-width: 768px) {
+
   .locations-list{
     display: none;
   }
@@ -232,7 +265,7 @@ input[type="text"]{
     --kPadding-lg:16px;
     --kFS-title: 48px;
     --kFS-subTitle: 14px;
-    --kFS-lg: 14px;
+    --kFS-lg: 16px;
     --kFS-reg: 14px;
     --kFS-min: 14px;
     --kFS-xm: 14px;
@@ -245,6 +278,50 @@ input[type="text"]{
   #locationsBtnList{
     display: block;
   }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    justify-content: center;
+  }
+
+  .left-section{
+    padding: 16px;
+  }
+
+  .company-name,
+  .guide-name{
+    font-size: 28px;
+  }
+
+  .sale-for{
+    font-size: 16px;
+  }
+
+  .time{
+    font-size: 16px;
+  }
+
+  .event-name,
+  .tour-info{
+    font-size: 22px;
+  }
+
+.event-name-title{
+  font-size: 28px;
+}
+
+.imgs-group{
+  flex-direction: column;
+}
+
+.filterBtns-container{
+  top: -62px;
+  left: 16px;
+}
+
+
 }
 
 /* sm */
