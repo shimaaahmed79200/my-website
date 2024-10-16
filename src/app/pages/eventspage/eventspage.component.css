@@ -73,3 +73,43 @@ main {
     padding: 0 80px;
 }
 
+.event-cards-container {
+    margin-top: 20px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .event-cards-container {
+        margin-top: 20px;
+        padding-bottom: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    .banner {
+        padding: 40px 50px 20px 50px;
+    }
+    .banner h1 {
+        font-size: 64px;
+        line-height: 60px;
+    }
+    .banner h3 {
+        padding: 0 0 10px 0;
+    }
+    .banner h6 {
+        font-family: var(--kFont-Jos);
+        font-size: var(--kFS-lg);
+        color: var(--kblue-300);
+        font-weight: 500;
+    }
+    .bottom-section{
+        padding: 0 40px;
+    }
+  }

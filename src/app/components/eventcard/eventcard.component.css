@@ -59,3 +59,10 @@
     font-family: "Josefin Sans", sans-serif;
     font-size: 12px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .mini-info-container button {
+        width: 100px;
+    }
+  }
