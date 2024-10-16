@@ -42,9 +42,12 @@ main {
 }
 
 .tour-cards-section {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
 }
 
 .tour-cards-container {
@@ -53,5 +56,29 @@ main {
     flex-direction: column;
     gap: 30px;
     margin-top: 50px;
-    padding-bottom: 100px;
+    margin-bottom: 20px;
 }
+
+.pagination-slider {
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .banner {
+        padding: 40px 50px 20px 50px;
+    }
+    .banner h1 {
+        font-size: 64px;
+        line-height: 60px;
+    }
+    .banner h3 {
+        padding: 0 0 10px 0;
+    }
+    .banner h6 {
+        font-family: var(--kFont-Jos);
+        font-size: var(--kFS-lg);
+        color: var(--kblue-300);
+        font-weight: 500;
+    }
+  }
